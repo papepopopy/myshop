@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ItemRepositoryTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ItemRepositoryTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.spring.myproject.repository.html">com.spring.myproject.repository</a> &gt; ItemRepositoryTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.707s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">QueryDsl을 적용하여 조회 기능 테스트</td>
+<td class="success">queryDslTest()</td>
+<td class="success">0.707s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>18:01:29.967 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.spring.myproject.repository.ItemRepositoryTest]: ItemRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:01:30.067 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.spring.myproject.MyprojectApplication for test class com.spring.myproject.repository.ItemRepositoryTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.2)
+
+2024-07-25T18:01:30.505+09:00  INFO 18816 --- [myproject] [    Test worker] c.s.m.repository.ItemRepositoryTest      : Starting ItemRepositoryTest using Java 17.0.10 with PID 18816 (started by 601 in C:\javaStudy\springStudy\myproject)
+2024-07-25T18:01:30.507+09:00  INFO 18816 --- [myproject] [    Test worker] c.s.m.repository.ItemRepositoryTest      : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-07-25T18:01:31.088+09:00  INFO 18816 --- [myproject] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-25T18:01:31.148+09:00  INFO 18816 --- [myproject] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 2 JPA repository interfaces.
+2024-07-25T18:01:31.543+09:00  INFO 18816 --- [myproject] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-25T18:01:31.609+09:00  INFO 18816 --- [myproject] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-25T18:01:31.648+09:00  INFO 18816 --- [myproject] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-25T18:01:31.976+09:00  INFO 18816 --- [myproject] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-25T18:01:32.005+09:00  INFO 18816 --- [myproject] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-25T18:01:32.175+09:00  INFO 18816 --- [myproject] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:test user=SA
+2024-07-25T18:01:32.176+09:00  INFO 18816 --- [myproject] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-25T18:01:32.199+09:00  WARN 18816 --- [myproject] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-25T18:01:32.225+09:00 DEBUG 18816 --- [myproject] [    Test worker] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NCharTypeDescriptor) replaced previous registration(CharTypeDescriptor)
+2024-07-25T18:01:32.226+09:00 DEBUG 18816 --- [myproject] [    Test worker] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NVarcharTypeDescriptor) replaced previous registration(VarcharTypeDescriptor)
+2024-07-25T18:01:32.226+09:00 DEBUG 18816 --- [myproject] [    Test worker] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(LongNVarcharTypeDescriptor) replaced previous registration(LongVarcharTypeDescriptor)
+2024-07-25T18:01:32.228+09:00 DEBUG 18816 --- [myproject] [    Test worker] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NClobTypeDescriptor(DEFAULT)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2024-07-25T18:01:32.228+09:00 DEBUG 18816 --- [myproject] [    Test worker] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2005, ClobTypeDescriptor(STREAM_BINDING)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2024-07-25T18:01:32.230+09:00 DEBUG 18816 --- [myproject] [    Test worker] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(TimestampUtcDescriptor) replaced previous registration(TimestampUtcDescriptor)
+2024-07-25T18:01:32.978+09:00  INFO 18816 --- [myproject] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    create table board (
+        bno bigint generated by default as identity,
+        content varchar(2000) not null,
+        title varchar(500) not null,
+        writer varchar(50) not null,
+        primary key (bno)
+    )
+Hibernate: 
+    create table item (
+        item_id bigint generated by default as identity,
+        item_detail clob not null,
+        item_nm varchar(50) not null,
+        item_sell_status enum ('SELL','SOLD_OUT'),
+        price integer not null,
+        reg_time timestamp(6),
+        stock_number integer not null,
+        update_time timestamp(6),
+        primary key (item_id)
+    )
+2024-07-25T18:01:33.031+09:00  INFO 18816 --- [myproject] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-25T18:01:33.157+09:00  WARN 18816 --- [myproject] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-25T18:01:33.186+09:00  INFO 18816 --- [myproject] [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-25T18:01:33.690+09:00  INFO 18816 --- [myproject] [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-25T18:01:34.214+09:00  INFO 18816 --- [myproject] [    Test worker] c.s.m.repository.ItemRepositoryTest      : Started ItemRepositoryTest in 3.95 seconds (process running for 5.061)
+Hibernate: 
+    insert 
+    into
+        item
+        (item_detail, item_nm, item_sell_status, price, reg_time, stock_number, update_time, item_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        item
+        (item_detail, item_nm, item_sell_status, price, reg_time, stock_number, update_time, item_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        item
+        (item_detail, item_nm, item_sell_status, price, reg_time, stock_number, update_time, item_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        item
+        (item_detail, item_nm, item_sell_status, price, reg_time, stock_number, update_time, item_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        item
+        (item_detail, item_nm, item_sell_status, price, reg_time, stock_number, update_time, item_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        item
+        (item_detail, item_nm, item_sell_status, price, reg_time, stock_number, update_time, item_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        item
+        (item_detail, item_nm, item_sell_status, price, reg_time, stock_number, update_time, item_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        item
+        (item_detail, item_nm, item_sell_status, price, reg_time, stock_number, update_time, item_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        item
+        (item_detail, item_nm, item_sell_status, price, reg_time, stock_number, update_time, item_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        item
+        (item_detail, item_nm, item_sell_status, price, reg_time, stock_number, update_time, item_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    select
+        i1_0.item_id,
+        i1_0.item_detail,
+        i1_0.item_nm,
+        i1_0.item_sell_status,
+        i1_0.price,
+        i1_0.reg_time,
+        i1_0.stock_number,
+        i1_0.update_time 
+    from
+        item i1_0 
+    where
+        i1_0.item_sell_status=? 
+        and i1_0.item_detail like ? escape '!' 
+    order by
+        i1_0.price desc
+2024-07-25T18:01:34.883+09:00  INFO 18816 --- [myproject] [    Test worker] c.s.m.repository.ItemRepositoryTest      : =&gt; item list: .fetch() 메서드 결과
+2024-07-25T18:01:34.885+09:00  INFO 18816 --- [myproject] [    Test worker] c.s.m.repository.ItemRepositoryTest      : =&gt; Qitem: 10,테스트 상품 상세 설명10
+2024-07-25T18:01:34.885+09:00  INFO 18816 --- [myproject] [    Test worker] c.s.m.repository.ItemRepositoryTest      : =&gt; Qitem: 9,테스트 상품 상세 설명9
+2024-07-25T18:01:34.885+09:00  INFO 18816 --- [myproject] [    Test worker] c.s.m.repository.ItemRepositoryTest      : =&gt; Qitem: 8,테스트 상품 상세 설명8
+2024-07-25T18:01:34.885+09:00  INFO 18816 --- [myproject] [    Test worker] c.s.m.repository.ItemRepositoryTest      : =&gt; Qitem: 7,테스트 상품 상세 설명7
+2024-07-25T18:01:34.886+09:00  INFO 18816 --- [myproject] [    Test worker] c.s.m.repository.ItemRepositoryTest      : =&gt; Qitem: 6,테스트 상품 상세 설명6
+2024-07-25T18:01:34.886+09:00  INFO 18816 --- [myproject] [    Test worker] c.s.m.repository.ItemRepositoryTest      : =&gt; Qitem: 5,테스트 상품 상세 설명5
+2024-07-25T18:01:34.886+09:00  INFO 18816 --- [myproject] [    Test worker] c.s.m.repository.ItemRepositoryTest      : =&gt; Qitem: 4,테스트 상품 상세 설명4
+2024-07-25T18:01:34.886+09:00  INFO 18816 --- [myproject] [    Test worker] c.s.m.repository.ItemRepositoryTest      : =&gt; Qitem: 3,테스트 상품 상세 설명3
+2024-07-25T18:01:34.886+09:00  INFO 18816 --- [myproject] [    Test worker] c.s.m.repository.ItemRepositoryTest      : =&gt; Qitem: 2,테스트 상품 상세 설명2
+2024-07-25T18:01:34.886+09:00  INFO 18816 --- [myproject] [    Test worker] c.s.m.repository.ItemRepositoryTest      : =&gt; Qitem: 1,테스트 상품 상세 설명1
+Hibernate: 
+    select
+        i1_0.item_id,
+        i1_0.item_detail,
+        i1_0.item_nm,
+        i1_0.item_sell_status,
+        i1_0.price,
+        i1_0.reg_time,
+        i1_0.stock_number,
+        i1_0.update_time 
+    from
+        item i1_0 
+    where
+        i1_0.item_sell_status=? 
+        and i1_0.item_detail like ? escape '!' 
+    order by
+        i1_0.price desc 
+    fetch
+        first ? rows only
+2024-07-25T18:01:34.890+09:00  INFO 18816 --- [myproject] [    Test worker] c.s.m.repository.ItemRepositoryTest      : =&gt; item list: .fetchFirst() 메서드 결과
+2024-07-25T18:01:34.891+09:00  INFO 18816 --- [myproject] [    Test worker] c.s.m.repository.ItemRepositoryTest      : =&gt; Qitem: 10,테스트 상품 상세 설명10
+Hibernate: 
+    select
+        count(i1_0.item_id) 
+    from
+        item i1_0 
+    where
+        i1_0.item_sell_status=? 
+        and i1_0.item_detail like ? escape '!'
+2024-07-25T18:01:34.922+09:00  INFO 18816 --- [myproject] [    Test worker] c.s.m.repository.ItemRepositoryTest      : =&gt; item list: .fetchCount() 메서드 결과
+2024-07-25T18:01:34.922+09:00  INFO 18816 --- [myproject] [    Test worker] c.s.m.repository.ItemRepositoryTest      : =&gt; total: 10
+Hibernate: 
+    select
+        i1_0.item_id,
+        i1_0.item_detail,
+        i1_0.item_nm,
+        i1_0.item_sell_status,
+        i1_0.price,
+        i1_0.reg_time,
+        i1_0.stock_number,
+        i1_0.update_time 
+    from
+        item i1_0 
+    where
+        i1_0.item_id=?
+2024-07-25T18:01:34.928+09:00  INFO 18816 --- [myproject] [    Test worker] c.s.m.repository.ItemRepositoryTest      : =&gt; .fetchOne() 조회결과: 
+2024-07-25T18:01:34.928+09:00  INFO 18816 --- [myproject] [    Test worker] c.s.m.repository.ItemRepositoryTest      : =&gt; 5,테스트 상품5
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.8</a> at 2024. 7. 25. 오후 6:01:35</p>
+</div>
+</div>
+</body>
+</html>
