@@ -2,13 +2,26 @@ package com.spring.myproject.repository;
 
 import com.spring.myproject.entity.Board;
 import lombok.extern.log4j.Log4j2;
+import org.assertj.core.api.Assert;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+
+
+import java.util.List;
 import java.util.Optional;
 import java.util.stream.IntStream;
+
+
+
+
 
 @SpringBootTest
 @Log4j2
@@ -93,10 +106,58 @@ class BoardRepositoryTest {
     else log.info(result);
     */
 
-
   }
 
 
 
 
+
+  //-----------------------------------------//
+  // 페이징 처리
+  //-----------------------------------------//
+  @Test
+  @DisplayName("search and paging 테스트")
+  public void testSearch1(){
+    Pageable pageable = PageRequest.of(0,5, Sort.by("bno").descending());
+
+    Page<Board> result  = boardRepository.search2(pageable);
+    result.getContent().forEach( board -> log.info("=> list:"+board));
+
+    log.info("----");
+
+    List<Board> contents =  boardRepository.search2(pageable).getContent();
+    contents.forEach( board -> log.info("=> list2:"+board));
+  }
+
+  @Test
+  @DisplayName("search keyword and paging 테스트1")
+  public void testSearchAll(){
+    //given
+    // paging 정보
+    Pageable pageable = PageRequest.of(5,5, Sort.by("bno").descending());
+    // 키워드 , 타입
+    String[] types = {"t","c","w"};
+    String keyword = "1";
+
+    //when
+    Page<Board> result  = boardRepository.searchAll(types, keyword, pageable);
+    result.getContent().forEach( board -> log.info("=> list:"+board));
+
+    log.info("----");
+
+    List<Board> contents =  boardRepository.searchAll(types, keyword, pageable).getContent();
+    contents.forEach( board -> log.info("=> list2:"+board));
+
+    log.info("=> paging info");
+    log.info("=> 총페이지:"+(result.getTotalPages())+" page");
+    log.info("=> 페이지사이즈:"+result.getSize());
+    log.info("=> 현재페이지:"+result.getNumber());
+    log.info("=> 다음페이지:"+result.hasNext());
+    log.info("=> 이전페이지:"+result.hasPrevious());
+
+    //then
+    //Assert.assertThat(result.hasPrevious()).isEqualTo(false);
+
+
+  }
 }

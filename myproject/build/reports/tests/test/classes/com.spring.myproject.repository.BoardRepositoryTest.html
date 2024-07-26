@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - BoardRepositoryTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>BoardRepositoryTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.spring.myproject.repository.html">com.spring.myproject.repository</a> &gt; BoardRepositoryTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.638s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">search keyword and paging 테스트1</td>
+<td class="success">testSearchAll()</td>
+<td class="success">0.638s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>18:17:39.550 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.spring.myproject.repository.BoardRepositoryTest]: BoardRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:17:39.655 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.spring.myproject.MyprojectApplication for test class com.spring.myproject.repository.BoardRepositoryTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.2)
+
+2024-07-26T18:17:40.068+09:00  INFO 19884 --- [myproject] [    Test worker] c.s.m.repository.BoardRepositoryTest     : Starting BoardRepositoryTest using Java 17.0.10 with PID 19884 (started by 601 in C:\javaStudy\springStudy\myproject)
+2024-07-26T18:17:40.069+09:00  INFO 19884 --- [myproject] [    Test worker] c.s.m.repository.BoardRepositoryTest     : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-07-26T18:17:40.653+09:00  INFO 19884 --- [myproject] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-26T18:17:40.713+09:00  INFO 19884 --- [myproject] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 2 JPA repository interfaces.
+2024-07-26T18:17:41.226+09:00  INFO 19884 --- [myproject] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-26T18:17:41.291+09:00  INFO 19884 --- [myproject] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-26T18:17:41.328+09:00  INFO 19884 --- [myproject] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-26T18:17:41.676+09:00  INFO 19884 --- [myproject] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-26T18:17:41.711+09:00  INFO 19884 --- [myproject] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-26T18:17:41.809+09:00  INFO 19884 --- [myproject] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@65f5cae3
+2024-07-26T18:17:41.811+09:00  INFO 19884 --- [myproject] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-26T18:17:41.837+09:00  WARN 19884 --- [myproject] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-26T18:17:41.860+09:00 DEBUG 19884 --- [myproject] [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@39f93225) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@24b3f778)
+2024-07-26T18:17:41.860+09:00 DEBUG 19884 --- [myproject] [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@164dea80) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4392362c)
+2024-07-26T18:17:41.860+09:00 DEBUG 19884 --- [myproject] [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@338a4c61) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@839755f)
+2024-07-26T18:17:41.860+09:00 DEBUG 19884 --- [myproject] [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@71d99732) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2328ec73)
+2024-07-26T18:17:41.861+09:00 DEBUG 19884 --- [myproject] [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@42a05533) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@17053b5)
+2024-07-26T18:17:41.861+09:00 DEBUG 19884 --- [myproject] [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3cad24ae) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@58021c3c)
+2024-07-26T18:17:41.861+09:00 DEBUG 19884 --- [myproject] [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@18cbc3c2) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1b25d695)
+2024-07-26T18:17:41.861+09:00 DEBUG 19884 --- [myproject] [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4ef8090b) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6d31f14)
+2024-07-26T18:17:41.861+09:00 DEBUG 19884 --- [myproject] [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@404009df) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@75e4fe3c)
+2024-07-26T18:17:41.862+09:00 DEBUG 19884 --- [myproject] [    Test worker] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2005, ClobTypeDescriptor(STREAM_BINDING)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2024-07-26T18:17:42.611+09:00  INFO 19884 --- [myproject] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-26T18:17:42.651+09:00  INFO 19884 --- [myproject] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-26T18:17:42.805+09:00  WARN 19884 --- [myproject] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-26T18:17:42.832+09:00  INFO 19884 --- [myproject] [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-07-26T18:17:43.355+09:00  INFO 19884 --- [myproject] [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-26T18:17:43.866+09:00  INFO 19884 --- [myproject] [    Test worker] c.s.m.repository.BoardRepositoryTest     : Started BoardRepositoryTest in 4.024 seconds (process running for 5.155)
+Hibernate: 
+    select
+        b1_0.bno,
+        b1_0.content,
+        b1_0.moddate,
+        b1_0.regdate,
+        b1_0.title,
+        b1_0.writer 
+    from
+        board b1_0 
+    where
+        b1_0.title like ? escape '!' 
+        or b1_0.content like ? escape '!' 
+        or b1_0.writer like ? escape '!' 
+    order by
+        b1_0.bno desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        count(b1_0.bno) 
+    from
+        board b1_0 
+    where
+        b1_0.title like ? escape '!' 
+        or b1_0.content like ? escape '!' 
+        or b1_0.writer like ? escape '!'
+2024-07-26T18:17:44.501+09:00  INFO 19884 --- [myproject] [    Test worker] c.s.m.repository.BoardRepositoryTest     : ----
+Hibernate: 
+    select
+        b1_0.bno,
+        b1_0.content,
+        b1_0.moddate,
+        b1_0.regdate,
+        b1_0.title,
+        b1_0.writer 
+    from
+        board b1_0 
+    where
+        b1_0.title like ? escape '!' 
+        or b1_0.content like ? escape '!' 
+        or b1_0.writer like ? escape '!' 
+    order by
+        b1_0.bno desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        count(b1_0.bno) 
+    from
+        board b1_0 
+    where
+        b1_0.title like ? escape '!' 
+        or b1_0.content like ? escape '!' 
+        or b1_0.writer like ? escape '!'
+2024-07-26T18:17:44.508+09:00  INFO 19884 --- [myproject] [    Test worker] c.s.m.repository.BoardRepositoryTest     : =&gt; paging info
+2024-07-26T18:17:44.509+09:00  INFO 19884 --- [myproject] [    Test worker] c.s.m.repository.BoardRepositoryTest     : =&gt; 총페이지:5 page
+2024-07-26T18:17:44.509+09:00  INFO 19884 --- [myproject] [    Test worker] c.s.m.repository.BoardRepositoryTest     : =&gt; 페이지사이즈:5
+2024-07-26T18:17:44.509+09:00  INFO 19884 --- [myproject] [    Test worker] c.s.m.repository.BoardRepositoryTest     : =&gt; 현재페이지:5
+2024-07-26T18:17:44.509+09:00  INFO 19884 --- [myproject] [    Test worker] c.s.m.repository.BoardRepositoryTest     : =&gt; 다음페이지:false
+2024-07-26T18:17:44.511+09:00  INFO 19884 --- [myproject] [    Test worker] c.s.m.repository.BoardRepositoryTest     : =&gt; 이전페이지:true
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.8</a> at 2024. 7. 26. 오후 6:17:44</p>
+</div>
+</div>
+</body>
+</html>
