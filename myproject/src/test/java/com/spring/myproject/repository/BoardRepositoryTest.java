@@ -134,7 +134,7 @@ class BoardRepositoryTest {
   public void testSearchAll(){
     //given
     // paging 정보
-    Pageable pageable = PageRequest.of(5,5, Sort.by("bno").descending());
+    Pageable pageable = PageRequest.of(0,5, Sort.by("bno").descending());
     // 키워드 , 타입
     String[] types = {"t","c","w"};
     String keyword = "1";

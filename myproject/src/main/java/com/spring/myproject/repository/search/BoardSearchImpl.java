@@ -119,7 +119,7 @@ public class BoardSearchImpl extends QuerydslRepositorySupport implements BoardS
 
     QBoard board = QBoard.board;  // Entity -> QDomain
 
-    // query
+    // 1. query 작성
     JPQLQuery<Board>  query = from(board);
 
     if ( (types != null && types.length > 0) && keyword != null){// 검색 키워드가 있으면
@@ -141,9 +141,9 @@ public class BoardSearchImpl extends QuerydslRepositorySupport implements BoardS
     }// end if
 
 
-    // paging 추가
+    // 2. paging 추가
     this.getQuerydsl().applyPagination(pageable,query);
-    // query
+    // 3. query 실행
     List<Board> list = query.fetch();
     long count = query.fetchCount();
     //또는 long count = query.fetch().size();
